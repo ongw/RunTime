@@ -9,6 +9,7 @@
 import SpriteKit
 import GameplayKit
 import Stripe
+import Alamofire
 
 class GameScene: SKScene {
     
@@ -24,6 +25,16 @@ class GameScene: SKScene {
     var moveToSelectionMenu : SKAction = SKAction.init(named: "MoveToSelectionMenu")!
     var moveToDisplayMenu : SKAction = SKAction.init(named: "MoveToDisplayMenu")!
     var moveToCompletionMenu : SKAction = SKAction.init(named: "MoveToCompletionMenu")!
+    
+    /* Set up payment elements */
+    var baseURLString: String? = nil
+    var baseURL: URL {
+        if let urlString = self.baseURLString, let url = URL(string: urlString) {
+            return url
+        } else {
+            fatalError()
+        }
+    }
     
     override func didMove(to view: SKView) {
         
@@ -65,5 +76,22 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+    }
+    
+    
+    func createCustomerKey(withAPIVersion apiVersion: String, completion: @escaping STPJSONResponseCompletionBlock) {
+        let url = self.baseURL.appendingPathComponent("ephemeral_keys")
+        Alamofire.request(url, method: .post, parameters: [
+            "api_version": apiVersion,
+            ])
+            .validate(statusCode: 200..<300)
+            .responseJSON { responseJSON in
+                switch responseJSON.result {
+                case .success(let json):
+                    completion(json as? [String: AnyObject], nil)
+                case .failure(let error):
+                    completion(nil, error)
+                }
+        }
     }
 }

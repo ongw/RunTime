@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A278151281AF24AE815F4D291F07CE94'
-               BlueprintName = 'Stripe-Stripe'
+               BlueprintIdentifier = '3B6CC0C614C324709CE1D213AB3D5C91'
+               BlueprintName = 'SwiftyJSON'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Stripe.bundle'>
+               BuildableName = 'SwiftyJSON.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

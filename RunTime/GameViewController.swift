@@ -10,9 +10,21 @@ import UIKit
 import SpriteKit
 import GameplayKit
 import Stripe
+import CoreMotion
 
 class GameViewController: UIViewController {
-
+    
+    var currentMaxAccelX: Double = 0.0;
+    var currentMaxAccelY: Double = 0.0;
+    var currentMaxAccelZ: Double = 0.0;
+    var currentMaxRotX: Double = 0.0;
+    var currentMaxRotY: Double = 0.0;
+    var currentMaxRotZ: Double = 0.0;
+    var counter: integer_t = 0;
+    
+    
+    var motionManager: CMMotionManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +43,13 @@ class GameViewController: UIViewController {
             view.showsFPS = true
             view.showsNodeCount = true
         }
+        
+        
+        motionManager = CMMotionManager()
+        motionManager.startAccelerometerUpdates()
+        
+        
+    
     }
 
     override var shouldAutorotate: Bool {

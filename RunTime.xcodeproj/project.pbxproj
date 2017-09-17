@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74A4B631CAA62D5D19ED4962 /* Pods_RunTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68150DCAF424AD85FC2CBDD7 /* Pods_RunTime.framework */; };
+		B92043221F6E051F008A13F2 /* PaymentScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92043211F6E051F008A13F2 /* PaymentScreen.xib */; };
 		DE6B15391F6DB7ED004A3374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B15381F6DB7ED004A3374 /* AppDelegate.swift */; };
 		DE6B153B1F6DB7ED004A3374 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6B153A1F6DB7ED004A3374 /* GameScene.sks */; };
 		DE6B153D1F6DB7ED004A3374 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6B153C1F6DB7ED004A3374 /* Actions.sks */; };
@@ -23,6 +24,7 @@
 		319FBB771F6DFF75002BAA15 /* RunTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunTime-Bridging-Header.h"; sourceTree = "<group>"; };
 		34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunTime/Pods-RunTime.debug.xcconfig"; sourceTree = "<group>"; };
 		68150DCAF424AD85FC2CBDD7 /* Pods_RunTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B92043211F6E051F008A13F2 /* PaymentScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentScreen.xib; sourceTree = "<group>"; };
 		BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunTime/Pods-RunTime.release.xcconfig"; sourceTree = "<group>"; };
 		DE6B15351F6DB7ED004A3374 /* RunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6B15381F6DB7ED004A3374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				DE6B15421F6DB7ED004A3374 /* Main.storyboard */,
 				DE6B15451F6DB7ED004A3374 /* Assets.xcassets */,
 				DE6B15471F6DB7ED004A3374 /* LaunchScreen.storyboard */,
+				B92043211F6E051F008A13F2 /* PaymentScreen.xib */,
 				DE6B154A1F6DB7ED004A3374 /* Info.plist */,
 				319FBB771F6DFF75002BAA15 /* RunTime-Bridging-Header.h */,
 			);
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92043221F6E051F008A13F2 /* PaymentScreen.xib in Resources */,
 				DE6B15441F6DB7ED004A3374 /* Main.storyboard in Resources */,
 				DE6B153B1F6DB7ED004A3374 /* GameScene.sks in Resources */,
 				DE6B15461F6DB7ED004A3374 /* Assets.xcassets in Resources */,

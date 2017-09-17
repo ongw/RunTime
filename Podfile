@@ -6,9 +6,10 @@ target 'RunTime' do
   use_frameworks!
 
   # Pods for RunTime
+pod 'Stripe'
 pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.5'
-pod 'Stripe'
 pod 'AFNetworking', '~> 2.5.4'
+pod 'PebbleKit'
 
 end

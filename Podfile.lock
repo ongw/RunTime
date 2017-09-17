@@ -21,21 +21,24 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Alamofire (4.5.0)
+  - PebbleKit (4.0.0)
   - Stripe (11.1.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - Alamofire (~> 4.5)
+  - PebbleKit
   - Stripe
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  PebbleKit: 4af7a5f57522cbd371f1798e6dd80bd21ac9d46f
   Stripe: 331994704823640a827b8da41255a439d60b61ce
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: ba2af716fa64ba8ea91de5678c59a37b39029892
+PODFILE CHECKSUM: 0c33a762ff2db4be2c78aba42560742dd9f184ce
 
 COCOAPODS: 1.2.1

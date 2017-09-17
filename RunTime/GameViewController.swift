@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import Stripe
 
 class GameViewController: UIViewController {
 
@@ -53,6 +54,7 @@ class GameViewController: UIViewController {
         return true
     }
     
+    /*
     @IBAction func donate(sender: AnyObject) {
         
         // Initiate the card
@@ -120,4 +122,5 @@ class GameViewController: UIViewController {
             self.handleError(error!)
         }
     }
+    */
 }

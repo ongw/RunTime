@@ -52,4 +52,49 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func donate(sender: AnyObject) {
+        
+        // Initiate the card
+        var stripCard = STPCard()
+        
+        // Split the expiration date to extract Month & Year
+        if self.expireDateTextField.text.isEmpty == false {
+            let expirationDate = self.expireDateTextField.text.componentsSeparatedByString("/")
+            let expMonth = UInt(expirationDate[0].toInt()!)
+            let expYear = UInt(expirationDate[1].toInt()!)
+            
+            // Send the card info to Strip to get the token
+            stripCard.number = self.cardNumberTextField.text
+            stripCard.cvc = self.cvcTextField.text
+            stripCard.expMonth = expMonth
+            stripCard.expYear = expYear
+        }
+        
+        var underlyingError: NSError?
+        stripCard.validateCardReturningError(&underlyingError)
+        if underlyingError != nil {
+            self.spinner.stopAnimating()
+            self.handleError(underlyingError!)
+            return
+        }
+        
+        STPAPIClient.sharedClient().createTokenWithCard(stripCard, completion: { (token, error) -> Void in
+            
+            if error != nil {
+                self.handleError(error!)
+                return
+            }
+            
+            self.postStripeToken(token!)
+        })
+        
+        func handleError(error: NSError) {
+            UIAlertView(title: "Please Try Again",
+                        message: error.localizedDescription,
+                        delegate: nil,
+                        cancelButtonTitle: "OK").show()
+            
+        }
+    }
 }

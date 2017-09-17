@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319FBB771F6DFF75002BAA15 /* RunTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunTime-Bridging-Header.h"; sourceTree = "<group>"; };
 		34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunTime/Pods-RunTime.debug.xcconfig"; sourceTree = "<group>"; };
 		68150DCAF424AD85FC2CBDD7 /* Pods_RunTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunTime/Pods-RunTime.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 				DE6B15451F6DB7ED004A3374 /* Assets.xcassets */,
 				DE6B15471F6DB7ED004A3374 /* LaunchScreen.storyboard */,
 				DE6B154A1F6DB7ED004A3374 /* Info.plist */,
+				319FBB771F6DFF75002BAA15 /* RunTime-Bridging-Header.h */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -135,7 +137,7 @@
 				TargetAttributes = {
 					DE6B15341F6DB7ED004A3374 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = C79RLRW3DJ;
+						DevelopmentTeam = TF8HN4B4PJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -353,11 +355,13 @@
 			baseConfigurationReference = 34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C79RLRW3DJ;
+				DEVELOPMENT_TEAM = TF8HN4B4PJ;
 				INFOPLIST_FILE = RunTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertK.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunTime/RunTime-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RunTime/RunTime-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -367,11 +371,13 @@
 			baseConfigurationReference = BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C79RLRW3DJ;
+				DEVELOPMENT_TEAM = TF8HN4B4PJ;
 				INFOPLIST_FILE = RunTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertK.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunTime/RunTime-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RunTime/RunTime-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -14,10 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        STPPaymentConfiguration.shared().publishableKey = "sk_test_eTGbY1rYDxYCLWQP6f5tsQfb"
-        // do any other necessary launch configuration
-        print ("hello")
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // Stripe Configuration
+        Stripe.setDefaultPublishableKey("pk_test_sNewk6lJrZzekkcj56i791bo")
+        
         return true
     }
 

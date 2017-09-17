@@ -18,6 +18,7 @@ class GameScene: SKScene {
     var startButton: MSButtonNode!
     var completeButton: MSButtonNode!
     var runAgainButton: MSButtonNode!
+    var logo: SKSpriteNode!
     var cameraNode: SKCameraNode!
     
     /* Set up camera animations */
@@ -26,15 +27,8 @@ class GameScene: SKScene {
     var moveToDisplayMenu : SKAction = SKAction.init(named: "MoveToDisplayMenu")!
     var moveToCompletionMenu : SKAction = SKAction.init(named: "MoveToCompletionMenu")!
     
-    /* Set up payment elements */
-    var baseURLString: String? = nil
-    var baseURL: URL {
-        if let urlString = self.baseURLString, let url = URL(string: urlString) {
-            return url
-        } else {
-            fatalError()
-        }
-    }
+    /* Set up app animations */
+    var fadeInAnimation : SKAction = SKAction.fadeIn(withDuration: 1)
     
     override func didMove(to view: SKView) {
         
@@ -48,25 +42,45 @@ class GameScene: SKScene {
         /* Initialize begin button */
         beginButton = self.childNode(withName: "beginButton") as! MSButtonNode
         beginButton.selectedHandler = { [unowned self] in
+            if !self.cameraNode.hasActions() {
             self.cameraNode.run(self.moveToSelectionMenu)
+            }
         }
+        
+        /* Disable touch */
+        beginButton.isUserInteractionEnabled = false
+        
         
         /* Initialize start button */
         startButton = self.childNode(withName: "startButton") as! MSButtonNode
         startButton.selectedHandler = { [unowned self] in
+            if !self.cameraNode.hasActions() {
             self.cameraNode.run(self.moveToDisplayMenu)
+            }
         }
         
         /* Initialize completed button */
         completeButton = self.childNode(withName: "completeButton") as! MSButtonNode
         completeButton.selectedHandler = { [unowned self] in
+            if !self.cameraNode.hasActions() {
             self.cameraNode.run(self.moveToCompletionMenu)
+            }
         }
         
         /* Initialize run again button */
         runAgainButton = self.childNode(withName: "runAgainButton") as! MSButtonNode
         runAgainButton.selectedHandler = { [unowned self] in
+            if !self.cameraNode.hasActions() {
             self.cameraNode.run(self.moveToStartMenu)
+            }
+        }
+        
+        /* Iniialize logo */
+        logo = self.childNode(withName: "logo") as! SKSpriteNode
+        
+        logo.run(fadeInAnimation) { [unowned self] in
+            self.beginButton.run(self.fadeInAnimation)
+            self.beginButton.isUserInteractionEnabled = true
         }
         
     }
@@ -76,22 +90,5 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-    }
-    
-    
-    func createCustomerKey(withAPIVersion apiVersion: String, completion: @escaping STPJSONResponseCompletionBlock) {
-        let url = self.baseURL.appendingPathComponent("ephemeral_keys")
-        Alamofire.request(url, method: .post, parameters: [
-            "api_version": apiVersion,
-            ])
-            .validate(statusCode: 200..<300)
-            .responseJSON { responseJSON in
-                switch responseJSON.result {
-                case .success(let json):
-                    completion(json as? [String: AnyObject], nil)
-                case .failure(let error):
-                    completion(nil, error)
-                }
-        }
     }
 }

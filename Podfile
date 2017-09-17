@@ -9,5 +9,6 @@ target 'RunTime' do
 pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.5'
 pod 'Stripe'
+pod 'AFNetworking', '~> 2.5.4'
 
 end

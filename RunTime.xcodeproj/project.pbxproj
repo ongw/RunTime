@@ -135,7 +135,7 @@
 				TargetAttributes = {
 					DE6B15341F6DB7ED004A3374 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = BBYTP7ZA5Z;
+						DevelopmentTeam = C79RLRW3DJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -353,10 +353,10 @@
 			baseConfigurationReference = 34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BBYTP7ZA5Z;
+				DEVELOPMENT_TEAM = C79RLRW3DJ;
 				INFOPLIST_FILE = RunTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kpandza.RunTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -367,10 +367,10 @@
 			baseConfigurationReference = BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BBYTP7ZA5Z;
+				DEVELOPMENT_TEAM = C79RLRW3DJ;
 				INFOPLIST_FILE = RunTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kpandza.RunTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

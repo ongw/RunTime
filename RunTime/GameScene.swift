@@ -15,7 +15,7 @@ class GameScene: SKScene {
     
     /* Set up app elements */
     var beginButton: MSButtonNode!
-    var startButton: MSButtonNode!
+    var continueButton: MSButtonNode!
     var completeButton: MSButtonNode!
     var runAgainButton: MSButtonNode!
     var logo: SKSpriteNode!
@@ -52,8 +52,8 @@ class GameScene: SKScene {
         
         
         /* Initialize start button */
-        startButton = self.childNode(withName: "startButton") as! MSButtonNode
-        startButton.selectedHandler = { [unowned self] in
+        continueButton = self.childNode(withName: "continueButton") as! MSButtonNode
+        continueButton.selectedHandler = { [unowned self] in
             if !self.cameraNode.hasActions() {
             self.cameraNode.run(self.moveToDisplayMenu)
             }

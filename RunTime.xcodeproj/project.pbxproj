@@ -7,113 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74A4B631CAA62D5D19ED4962 /* Pods_RunTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68150DCAF424AD85FC2CBDD7 /* Pods_RunTime.framework */; };
-		B92043221F6E051F008A13F2 /* PaymentScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92043211F6E051F008A13F2 /* PaymentScreen.xib */; };
-		DE6B15391F6DB7ED004A3374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B15381F6DB7ED004A3374 /* AppDelegate.swift */; };
-		DE6B153B1F6DB7ED004A3374 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6B153A1F6DB7ED004A3374 /* GameScene.sks */; };
-		DE6B153D1F6DB7ED004A3374 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE6B153C1F6DB7ED004A3374 /* Actions.sks */; };
-		DE6B153F1F6DB7ED004A3374 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B153E1F6DB7ED004A3374 /* GameScene.swift */; };
-		DE6B15411F6DB7ED004A3374 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B15401F6DB7ED004A3374 /* GameViewController.swift */; };
-		DE6B15441F6DB7ED004A3374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6B15421F6DB7ED004A3374 /* Main.storyboard */; };
-		DE6B15461F6DB7ED004A3374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6B15451F6DB7ED004A3374 /* Assets.xcassets */; };
-		DE6B15491F6DB7ED004A3374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6B15471F6DB7ED004A3374 /* LaunchScreen.storyboard */; };
-		DE6B15511F6DBE1A004A3374 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B15501F6DBE1A004A3374 /* MSButtonNode.swift */; };
-		DECFFC591F6E2CE6009370B5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECFFC581F6E2CE6009370B5 /* HealthKit.framework */; };
-		DECFFC5B1F6E2E84009370B5 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECFFC5A1F6E2E84009370B5 /* HealthKitSetupAssistant.swift */; };
-		DECFFC5D1F6E3A4B009370B5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECFFC5C1F6E3A4B009370B5 /* CoreMotion.framework */; };
+		DE5E85A31F6E7C4700D49D61 /* DistanceKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E85A21F6E7C4700D49D61 /* DistanceKeyboard.swift */; };
+		DE5E85A51F6E7C7700D49D61 /* TimeKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E85A41F6E7C7700D49D61 /* TimeKeyboard.swift */; };
+		DE5E85A71F6E7C8500D49D61 /* MoneyKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E85A61F6E7C8500D49D61 /* MoneyKeyboard.swift */; };
+		DE5E85AB1F6E7DD400D49D61 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE5E85AA1F6E7DD400D49D61 /* Actions.sks */; };
+		DE5E85AE1F6E85AD00D49D61 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5E85AD1F6E85AD00D49D61 /* CoreMotion.framework */; };
+		DE8F4F091F6E76F300F97ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F4F081F6E76F300F97ECA /* AppDelegate.swift */; };
+		DE8F4F111F6E76F300F97ECA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F4F101F6E76F300F97ECA /* GameViewController.swift */; };
+		DE8F4F141F6E76F300F97ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8F4F121F6E76F300F97ECA /* Main.storyboard */; };
+		DE8F4F191F6E76F300F97ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8F4F171F6E76F300F97ECA /* LaunchScreen.storyboard */; };
+		DE8F4F211F6E774F00F97ECA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE8F4F201F6E774F00F97ECA /* GameScene.sks */; };
+		DE8F4F291F6E776B00F97ECA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F4F281F6E776B00F97ECA /* GameScene.swift */; };
+		DE8F4F2B1F6E778B00F97ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8F4F2A1F6E778B00F97ECA /* Assets.xcassets */; };
+		DE8F4F2D1F6E779D00F97ECA /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8F4F2C1F6E779D00F97ECA /* MSButtonNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		319FBB771F6DFF75002BAA15 /* RunTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunTime-Bridging-Header.h"; sourceTree = "<group>"; };
-		34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunTime/Pods-RunTime.debug.xcconfig"; sourceTree = "<group>"; };
-		68150DCAF424AD85FC2CBDD7 /* Pods_RunTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B92043211F6E051F008A13F2 /* PaymentScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentScreen.xib; sourceTree = "<group>"; };
-		BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunTime/Pods-RunTime.release.xcconfig"; sourceTree = "<group>"; };
-		DE6B15351F6DB7ED004A3374 /* RunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE6B15381F6DB7ED004A3374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE6B153A1F6DB7ED004A3374 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DE6B153C1F6DB7ED004A3374 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		DE6B153E1F6DB7ED004A3374 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		DE6B15401F6DB7ED004A3374 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		DE6B15431F6DB7ED004A3374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE6B15451F6DB7ED004A3374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE6B15481F6DB7ED004A3374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DE6B154A1F6DB7ED004A3374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE6B15501F6DBE1A004A3374 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
-		DECFFC571F6E2CE5009370B5 /* RunTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunTime.entitlements; sourceTree = "<group>"; };
-		DECFFC581F6E2CE6009370B5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		DECFFC5A1F6E2E84009370B5 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
-		DECFFC5C1F6E3A4B009370B5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DE5E85A21F6E7C4700D49D61 /* DistanceKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceKeyboard.swift; sourceTree = "<group>"; };
+		DE5E85A41F6E7C7700D49D61 /* TimeKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeKeyboard.swift; sourceTree = "<group>"; };
+		DE5E85A61F6E7C8500D49D61 /* MoneyKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyKeyboard.swift; sourceTree = "<group>"; };
+		DE5E85AA1F6E7DD400D49D61 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		DE5E85AD1F6E85AD00D49D61 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DE8F4F051F6E76F300F97ECA /* RunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8F4F081F6E76F300F97ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE8F4F101F6E76F300F97ECA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DE8F4F131F6E76F300F97ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE8F4F181F6E76F300F97ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE8F4F1A1F6E76F300F97ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE8F4F201F6E774F00F97ECA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DE8F4F281F6E776B00F97ECA /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DE8F4F2A1F6E778B00F97ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE8F4F2C1F6E779D00F97ECA /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE6B15321F6DB7ED004A3374 /* Frameworks */ = {
+		DE8F4F021F6E76F300F97ECA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DECFFC5D1F6E3A4B009370B5 /* CoreMotion.framework in Frameworks */,
-				74A4B631CAA62D5D19ED4962 /* Pods_RunTime.framework in Frameworks */,
-				DECFFC591F6E2CE6009370B5 /* HealthKit.framework in Frameworks */,
+				DE5E85AE1F6E85AD00D49D61 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		361C66388496008E73FDB112 /* Pods */ = {
+		DE5E85AC1F6E85AC00D49D61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */,
-				BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5CD655FB2A9979BD7CC426F4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DECFFC5C1F6E3A4B009370B5 /* CoreMotion.framework */,
-				DECFFC581F6E2CE6009370B5 /* HealthKit.framework */,
-				68150DCAF424AD85FC2CBDD7 /* Pods_RunTime.framework */,
+				DE5E85AD1F6E85AD00D49D61 /* CoreMotion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE6B152C1F6DB7EC004A3374 = {
+		DE8F4EFC1F6E76F300F97ECA = {
 			isa = PBXGroup;
 			children = (
-				DE6B15371F6DB7ED004A3374 /* RunTime */,
-				DE6B15361F6DB7ED004A3374 /* Products */,
-				361C66388496008E73FDB112 /* Pods */,
-				5CD655FB2A9979BD7CC426F4 /* Frameworks */,
+				DE8F4F071F6E76F300F97ECA /* RunTime */,
+				DE8F4F061F6E76F300F97ECA /* Products */,
+				DE5E85AC1F6E85AC00D49D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DE6B15361F6DB7ED004A3374 /* Products */ = {
+		DE8F4F061F6E76F300F97ECA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE6B15351F6DB7ED004A3374 /* RunTime.app */,
+				DE8F4F051F6E76F300F97ECA /* RunTime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE6B15371F6DB7ED004A3374 /* RunTime */ = {
+		DE8F4F071F6E76F300F97ECA /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
-				DECFFC571F6E2CE5009370B5 /* RunTime.entitlements */,
-				DE6B15381F6DB7ED004A3374 /* AppDelegate.swift */,
-				DE6B153A1F6DB7ED004A3374 /* GameScene.sks */,
-				DE6B153C1F6DB7ED004A3374 /* Actions.sks */,
-				DE6B153E1F6DB7ED004A3374 /* GameScene.swift */,
-				DE6B15501F6DBE1A004A3374 /* MSButtonNode.swift */,
-				DE6B15401F6DB7ED004A3374 /* GameViewController.swift */,
-				DE6B15421F6DB7ED004A3374 /* Main.storyboard */,
-				DE6B15451F6DB7ED004A3374 /* Assets.xcassets */,
-				DE6B15471F6DB7ED004A3374 /* LaunchScreen.storyboard */,
-				B92043211F6E051F008A13F2 /* PaymentScreen.xib */,
-				DE6B154A1F6DB7ED004A3374 /* Info.plist */,
-				319FBB771F6DFF75002BAA15 /* RunTime-Bridging-Header.h */,
-				DECFFC5A1F6E2E84009370B5 /* HealthKitSetupAssistant.swift */,
+				DE8F4F081F6E76F300F97ECA /* AppDelegate.swift */,
+				DE8F4F201F6E774F00F97ECA /* GameScene.sks */,
+				DE5E85AA1F6E7DD400D49D61 /* Actions.sks */,
+				DE8F4F281F6E776B00F97ECA /* GameScene.swift */,
+				DE5E85A41F6E7C7700D49D61 /* TimeKeyboard.swift */,
+				DE5E85A61F6E7C8500D49D61 /* MoneyKeyboard.swift */,
+				DE5E85A21F6E7C4700D49D61 /* DistanceKeyboard.swift */,
+				DE8F4F2C1F6E779D00F97ECA /* MSButtonNode.swift */,
+				DE8F4F101F6E76F300F97ECA /* GameViewController.swift */,
+				DE8F4F121F6E76F300F97ECA /* Main.storyboard */,
+				DE8F4F2A1F6E778B00F97ECA /* Assets.xcassets */,
+				DE8F4F171F6E76F300F97ECA /* LaunchScreen.storyboard */,
+				DE8F4F1A1F6E76F300F97ECA /* Info.plist */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -121,16 +100,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE6B15341F6DB7ED004A3374 /* RunTime */ = {
+		DE8F4F041F6E76F300F97ECA /* RunTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE6B154D1F6DB7ED004A3374 /* Build configuration list for PBXNativeTarget "RunTime" */;
+			buildConfigurationList = DE8F4F1D1F6E76F300F97ECA /* Build configuration list for PBXNativeTarget "RunTime" */;
 			buildPhases = (
-				D0B557B6F79DB11400CFCAFB /* [CP] Check Pods Manifest.lock */,
-				DE6B15311F6DB7ED004A3374 /* Sources */,
-				DE6B15321F6DB7ED004A3374 /* Frameworks */,
-				DE6B15331F6DB7ED004A3374 /* Resources */,
-				682C5D7F38A78D4A5CEC0241 /* [CP] Embed Pods Frameworks */,
-				ECA98BA433B1A8A8DFFF6751 /* [CP] Copy Pods Resources */,
+				DE8F4F011F6E76F300F97ECA /* Sources */,
+				DE8F4F021F6E76F300F97ECA /* Frameworks */,
+				DE8F4F031F6E76F300F97ECA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -138,35 +114,27 @@
 			);
 			name = RunTime;
 			productName = RunTime;
-			productReference = DE6B15351F6DB7ED004A3374 /* RunTime.app */;
+			productReference = DE8F4F051F6E76F300F97ECA /* RunTime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DE6B152D1F6DB7EC004A3374 /* Project object */ = {
+		DE8F4EFD1F6E76F300F97ECA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Wes Ong";
 				TargetAttributes = {
-					DE6B15341F6DB7ED004A3374 = {
+					DE8F4F041F6E76F300F97ECA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = C79RLRW3DJ;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-							com.apple.HealthKit = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
-			buildConfigurationList = DE6B15301F6DB7EC004A3374 /* Build configuration list for PBXProject "RunTime" */;
+			buildConfigurationList = DE8F4F001F6E76F300F97ECA /* Build configuration list for PBXProject "RunTime" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -174,108 +142,61 @@
 				en,
 				Base,
 			);
-			mainGroup = DE6B152C1F6DB7EC004A3374;
-			productRefGroup = DE6B15361F6DB7ED004A3374 /* Products */;
+			mainGroup = DE8F4EFC1F6E76F300F97ECA;
+			productRefGroup = DE8F4F061F6E76F300F97ECA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE6B15341F6DB7ED004A3374 /* RunTime */,
+				DE8F4F041F6E76F300F97ECA /* RunTime */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE6B15331F6DB7ED004A3374 /* Resources */ = {
+		DE8F4F031F6E76F300F97ECA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B92043221F6E051F008A13F2 /* PaymentScreen.xib in Resources */,
-				DE6B15441F6DB7ED004A3374 /* Main.storyboard in Resources */,
-				DE6B153B1F6DB7ED004A3374 /* GameScene.sks in Resources */,
-				DE6B15461F6DB7ED004A3374 /* Assets.xcassets in Resources */,
-				DE6B15491F6DB7ED004A3374 /* LaunchScreen.storyboard in Resources */,
-				DE6B153D1F6DB7ED004A3374 /* Actions.sks in Resources */,
+				DE8F4F141F6E76F300F97ECA /* Main.storyboard in Resources */,
+				DE8F4F211F6E774F00F97ECA /* GameScene.sks in Resources */,
+				DE8F4F191F6E76F300F97ECA /* LaunchScreen.storyboard in Resources */,
+				DE8F4F2B1F6E778B00F97ECA /* Assets.xcassets in Resources */,
+				DE5E85AB1F6E7DD400D49D61 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		682C5D7F38A78D4A5CEC0241 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunTime/Pods-RunTime-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0B557B6F79DB11400CFCAFB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		ECA98BA433B1A8A8DFFF6751 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunTime/Pods-RunTime-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		DE6B15311F6DB7ED004A3374 /* Sources */ = {
+		DE8F4F011F6E76F300F97ECA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE6B153F1F6DB7ED004A3374 /* GameScene.swift in Sources */,
-				DE6B15411F6DB7ED004A3374 /* GameViewController.swift in Sources */,
-				DE6B15391F6DB7ED004A3374 /* AppDelegate.swift in Sources */,
-				DE6B15511F6DBE1A004A3374 /* MSButtonNode.swift in Sources */,
-				DECFFC5B1F6E2E84009370B5 /* HealthKitSetupAssistant.swift in Sources */,
+				DE8F4F291F6E776B00F97ECA /* GameScene.swift in Sources */,
+				DE5E85A71F6E7C8500D49D61 /* MoneyKeyboard.swift in Sources */,
+				DE8F4F111F6E76F300F97ECA /* GameViewController.swift in Sources */,
+				DE5E85A31F6E7C4700D49D61 /* DistanceKeyboard.swift in Sources */,
+				DE5E85A51F6E7C7700D49D61 /* TimeKeyboard.swift in Sources */,
+				DE8F4F2D1F6E779D00F97ECA /* MSButtonNode.swift in Sources */,
+				DE8F4F091F6E76F300F97ECA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DE6B15421F6DB7ED004A3374 /* Main.storyboard */ = {
+		DE8F4F121F6E76F300F97ECA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE6B15431F6DB7ED004A3374 /* Base */,
+				DE8F4F131F6E76F300F97ECA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DE6B15471F6DB7ED004A3374 /* LaunchScreen.storyboard */ = {
+		DE8F4F171F6E76F300F97ECA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE6B15481F6DB7ED004A3374 /* Base */,
+				DE8F4F181F6E76F300F97ECA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -283,7 +204,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DE6B154B1F6DB7ED004A3374 /* Debug */ = {
+		DE8F4F1B1F6E76F300F97ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,7 +254,7 @@
 			};
 			name = Debug;
 		};
-		DE6B154C1F6DB7ED004A3374 /* Release */ = {
+		DE8F4F1C1F6E76F300F97ECA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,36 +297,28 @@
 			};
 			name = Release;
 		};
-		DE6B154E1F6DB7ED004A3374 /* Debug */ = {
+		DE8F4F1E1F6E76F300F97ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34195CF30063CEF009614983 /* Pods-RunTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RunTime/RunTime.entitlements;
 				DEVELOPMENT_TEAM = C79RLRW3DJ;
 				INFOPLIST_FILE = RunTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTimeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RunTime/RunTime-Bridging-Header.h";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RunTime/RunTime-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		DE6B154F1F6DB7ED004A3374 /* Release */ = {
+		DE8F4F1F1F6E76F300F97ECA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCF0932421AD26CB3F3B96DC /* Pods-RunTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RunTime/RunTime.entitlements;
 				DEVELOPMENT_TEAM = C79RLRW3DJ;
 				INFOPLIST_FILE = RunTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTimeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WesO.RunTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RunTime/RunTime-Bridging-Header.h";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "RunTime/RunTime-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -413,25 +326,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE6B15301F6DB7EC004A3374 /* Build configuration list for PBXProject "RunTime" */ = {
+		DE8F4F001F6E76F300F97ECA /* Build configuration list for PBXProject "RunTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE6B154B1F6DB7ED004A3374 /* Debug */,
-				DE6B154C1F6DB7ED004A3374 /* Release */,
+				DE8F4F1B1F6E76F300F97ECA /* Debug */,
+				DE8F4F1C1F6E76F300F97ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE6B154D1F6DB7ED004A3374 /* Build configuration list for PBXNativeTarget "RunTime" */ = {
+		DE8F4F1D1F6E76F300F97ECA /* Build configuration list for PBXNativeTarget "RunTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE6B154E1F6DB7ED004A3374 /* Debug */,
-				DE6B154F1F6DB7ED004A3374 /* Release */,
+				DE8F4F1E1F6E76F300F97ECA /* Debug */,
+				DE8F4F1F1F6E76F300F97ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DE6B152D1F6DB7EC004A3374 /* Project object */;
+	rootObject = DE8F4EFD1F6E76F300F97ECA /* Project object */;
 }

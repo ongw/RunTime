@@ -2,23 +2,20 @@
 //  AppDelegate.swift
 //  RunTime
 //
-//  Created by Wes Ong on 2017-09-16.
+//  Created by Wes Ong on 2017-09-17.
 //  Copyright © 2017 Wes Ong. All rights reserved.
 //
 
 import UIKit
-import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        // Stripe Configuration
-        Stripe.setDefaultPublishableKey("pk_test_sNewk6lJrZzekkcj56i791bo")
-        
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
         return true
     }
 
@@ -43,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
 
 }
 
